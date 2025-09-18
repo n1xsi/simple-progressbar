@@ -1,4 +1,4 @@
-# Simple Python progressbar
+# The Simpliest Python progressbar
 
 ![image](https://i.imgur.com/XDHrkGN.png)
 
