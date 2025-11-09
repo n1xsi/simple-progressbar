@@ -18,9 +18,9 @@ from time import sleep
 i, count = 0, 35
 for _ in range(count):
     progress_bar(i, count)
-    sleep(0.2)
+    sleep(0.2)          # Для имитации задержки в работе
     i += 1
-progress_bar(i, count) # Для показа 100%-тного заполнения
+progress_bar(i, count)  # Для показа 100%-тного заполнения
 ```
 
 ## Демонстрация работы
