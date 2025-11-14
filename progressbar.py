@@ -1,6 +1,6 @@
-def progress_bar(done: int, undone: int, length = 25):
+def progress_bar(done: int, undone: int, length: int = 50) -> None:
     """
-    Отображает progress bar в консоли.
+    Отображает progressbar в консоли.
 
     Args:
         done: Количество выполненных задач.
@@ -10,7 +10,9 @@ def progress_bar(done: int, undone: int, length = 25):
     if undone == 0:
         sharps = length
         percentage = 100
+
     else:
         sharps = int(round(done/undone, 2)*float(length))
         percentage = int((done/undone)*100)
+
     print(f'\r|{"#"*sharps}{"-"*(length-sharps)}| [{percentage}%] [{done}/{undone}]', end="")
